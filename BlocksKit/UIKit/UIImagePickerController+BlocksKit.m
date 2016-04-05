@@ -3,10 +3,9 @@
 //  BlocksKit
 //
 
-#import "UIImagePickerController+BlocksKit.h"
 #import "A2DynamicDelegate.h"
-#import "NSObject+A2DynamicDelegate.h"
 #import "NSObject+A2BlockDelegate.h"
+#import "UIImagePickerController+BlocksKit.h"
 
 #pragma mark Custom delegate
 
@@ -45,11 +44,11 @@
 
 + (void)load
 {
-	@autoreleasepool {
-		[self bk_registerDynamicDelegate];
-		[self bk_linkDelegateMethods:@{ @"bk_didFinishPickingMediaBlock": @"imagePickerController:didFinishPickingMediaWithInfo:",
-                                        @"bk_didCancelBlock": @"imagePickerControllerDidCancel:" }];
-	}
+//	@autoreleasepool {
+//		[self bk_registerDynamicDelegate];
+//		[self bk_linkDelegateMethods:@{ @"bk_didFinishPickingMediaBlock": @"imagePickerController:didFinishPickingMediaWithInfo:",
+//                                        @"bk_didCancelBlock": @"imagePickerControllerDidCancel:" }];
+//	}
 }
 
 @end
